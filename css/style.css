@@ -1,0 +1,736 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container-fluid{
+    display: flex !important;
+    justify-content: end !important;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.freesh-chicken {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar {
+    background-color: #fe964d;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-right: 2.5rem !important;
+}
+
+.icon-first {
+    border-radius: 100px;
+    height: 45px;
+    width: 45px;
+
+    border: 1px solid #fff;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.icon-secnd {
+    border-radius: 100px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.round-icons {
+    font-size: 20px;
+    margin-top: 0.8rem;
+    color: #fff;
+}
+
+.carousel-item {
+    background-image: url(../images/bgimg.jpg);
+    height: 92vh;
+    background-size: cover;
+}
+
+.carousel-inner img {
+    height: 100vh;
+}
+
+.btnns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.btnns a {
+    display: inline-block;
+    padding: 13px 32px;
+    background: #fe964d;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: initial !important;
+}
+
+.btnns:hover {
+
+    transform: translateY(-2px) !important;
+    filter: drop-shadow(0px 5px 5px rgba(255, 186, 138, 0.7));
+}
+
+.btnns a:hover {
+    color: #fff !important;
+}
+
+.carousel-indicators button {
+    width: 15px !important;
+    height: 15px !important;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+    border: 3px solid #fff !important;
+    background: transparent;
+}
+
+.active {
+    background-color: #fe964d !important;
+}
+
+.carousel-control-next-ico {
+    color: #fe964d !important;
+}
+
+.fresh-killed {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 62px;
+}
+
+.discover-now {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+
+.poultry-fram-chicken img {
+    width: 524px;
+    height: 433px;
+
+}
+
+.chicken-contant h2 {
+    color: #181818;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 47px;
+    margin-bottom: 25px;
+}
+
+input {
+    border: 1px solid #fe964d;
+}
+
+.unorder-list li {
+    color: #716c80;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    list-style: none;
+}
+
+.chicken-contant p {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #716c80;
+    line-height: 24px;
+
+}
+
+#special-farm {
+    margin-bottom: 7rem;
+}
+
+#packed {
+    margin-bottom: 7rem;
+}
+
+#customer-item-card {
+    background: #fff7f1;
+    padding-bottom: 7rem;
+    overflow: hidden;
+}
+
+#interface-product {
+    margin-bottom: 5rem;
+    margin-top: 7rem;
+}
+
+#interface-product h2 {
+    color: #181818;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+#interface-product p {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 18px;
+    color: #716c80;
+    line-height: 24px;
+}
+
+.items-card {
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 20px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px rgb(136 136 136 / 10%);
+    box-sizing: border-box;
+    min-height: 50vh;
+    /* z-index: 999; */
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0% !important;
+    height: 0% !important;
+    visibility: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+    align-items: space-between;
+    transition: 0.3s;
+}
+
+.inner-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.cart-btn {
+    display: none;
+}
+
+.inner-icons a {
+    display: block !important;
+}
+
+.card-icons {
+    display: block;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    background-color: #fff;
+    visibility: hidden;
+    position: relative;
+}
+
+.heart {
+    font-size: 20px;
+    color: #181818;
+    position: absolute;
+    top: 26%;
+    left: 27%;
+    transform: translate(-50% -50%);
+
+}
+
+.heart:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color: #fe964d;
+}
+
+.items-card:hover .inner {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    visibility: visible;
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.items-card:hover .card-icons {
+    visibility: visible;
+}
+
+.items-card:hover .cart-btn {
+    display: block;
+}
+
+.fa-star {
+    color: #fe964d;
+    font-size: 18px;
+    margin-bottom: .4em;
+}
+
+.light {
+    font-size: 18px;
+    margin-bottom: 0.2rem;
+    color: #181818;
+    font-weight: 700;
+}
+
+.current-price {
+    color: #fe964d;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.old-price {
+    color: #181818;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 6px;
+    text-decoration: line-through;
+}
+
+.shoping-button {
+    padding-top: 5rem;
+}
+
+/* <!-- Poultry Farm Services --> */
+#poultry-services {
+    margin: 5rem 0px;
+}
+
+.web-services h2 {
+    font-size: 36px;
+    font-family: sans-serif;
+    color: #181818;
+    font-weight: 700;
+}
+
+.web-services p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #716c80;
+    line-height: 20px;
+}
+
+.web-services {
+    margin-bottom: 5rem;
+}
+
+.title-img h3 {
+    color: #181818;
+    padding: 9px 0px 0px 18px;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.card:hover .title-img h3 {
+    color: #fe964d;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card p {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #716c80;
+    line-height: 24px;
+}
+
+.Alternative-cards {
+    filter: drop-shadow(0 0 7px rgba(197, 197, 197, 0.10));
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Alternative-cards:hover {
+    filter: drop-shadow(0px 5px 5px rgba(197, 197, 197, 0.6));
+    transform: translatey(-5px);
+    border-radius: 100%;
+}
+
+.Alternative-cards .card {
+    border: none !important;
+}
+
+.secound-Alternative-cards {
+    padding-top: 2rem;
+}
+
+/* <!-- Poultry Farm Services Alternative card --> */
+#Poultry-Farm-Gallery {
+    background: #fff7f1;
+    padding-bottom: 8rem;
+    overflow: hidden;
+}
+
+#Gallery-card {
+    margin-bottom: 5rem;
+    margin-top: 7rem;
+}
+
+#Gallery-card h2 {
+    color: #181818;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+#Gallery-card p {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 18px;
+    color: #716c80;
+    line-height: 24px;
+}
+
+.gallery-btn {
+    margin-top: 4rem !important;
+}
+
+.image-wrapper {
+    overflow: hidden;
+
+}
+
+.inner-img {
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.inner-img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.img-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+/* <!-- Our Team Member  --> */
+#Teams {
+    margin: 5rem 0px;
+}
+
+#our-member h2 {
+    color: #181818;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: sans-serif;
+
+}
+
+.Teams {
+    margin-bottom: 3rem;
+}
+
+.card-title:hover {
+    transition: all 0.3s ease;
+    color: #fe964d;
+}
+
+#our-member p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #716c80;
+    line-height: 24px;
+}
+
+.team-icons {
+    padding-bottom: 1rem;
+}
+
+.card {
+    box-shadow: 0 0 6px rgb(8 136 136 / 10%);
+    border: 1px solid #fff !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    /* box-shadow: 0 0 10px rgb(8 136 136 / 50%); */
+    box-shadow: 0 10px 10px rgb(136 136 136 / 10%);
+    border: 1px solid #fff !important;
+    transform: translatey(-5px);
+
+}
+
+/* .justify-content-between{
+    margin-bottom: 3rem;
+ } */
+.fa-brands {
+    margin-left: 5px !important;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.fa-twitter,
+.fa-behance {
+    color: #55acee;
+}
+
+.fa-linkedin-in {
+    color: #007bb5;
+    ;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.fa-brands:hover {
+    color: #fe964d;
+}
+
+/* <!-- What Client Say Our Poultry Farm --> */
+#client-say {
+    background-color: #fff7f1;
+    margin: 4rem 0px;
+    padding: 6rem 0px;
+}
+
+.client-say h2 {
+    color: #181818;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+.client-say p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #716c80;
+    line-height: 24px;
+}
+
+.client-image {
+    background-color: #fff;
+    padding: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.client-image:hover {
+    filter: drop-shadow(0 0 10px rgba(136, 136, 136, 0.2));
+    transform: scale(1.02);
+}
+
+.client-image:hover .review h3 {
+    color: #fe964d;
+    transition: all 0.3s;
+}
+
+.client-contant {
+    margin: 25px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #716c80;
+    line-height: 24px;
+    font-family: sans-serif;
+}
+
+.jeson-smith img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.review {
+    margin-left: 25px;
+}
+
+.review h3 {
+    margin: 0px;
+    color: #181818;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.review p {
+    margin: 3px 0px 0px 0px;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #716c80;
+}
+
+/* <!-- Our Recent News --> */
+#our-recent {
+    margin-top: 5rem;
+}
+
+.our-recent {
+    padding-bottom: 4rem;
+}
+
+.our-recent h2 {
+    color: #181818;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+.our-recent p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #716c80;
+    line-height: 24px;
+}
+
+.card-body a {
+    color: #181818;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card-body a:hover {
+    color: #fe964d;
+}
+/* <!-- Products Range Quality Matters --> */
+#products{
+    margin-top: 8rem;
+}
+.Quality-Matters{
+    margin-bottom: 3rem;
+}
+.product-range{
+    box-shadow: 0 5px 10px rgb(136 136 136 / 10%);
+}
+.product-range:hover{
+    
+    box-shadow: 5PX 0px 8px rgb(136 136 136 / 10%);
+}
+/* hover propetry*/
+.qulity-image img{
+    transition: all 0.3s ease;
+}
+.product-range:hover .qulity-image img{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.qulity-range{
+    padding: 3rem 1.5rem;
+}
+.qulity-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.qulity-contant h6{
+text-align: center;
+transition: all 0.3s ease;
+font-size: 20px;
+color: #181818;
+font-weight: 700;
+font-family: sans-serif;
+}
+/* hover propetry*/
+.product-range:hover .qulity-contant h6{
+    color: #fe964d;
+    transition: all 0.3s ease;
+}
+.qulity-contant p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #716c80;
+    line-height: 24px;
+    text-align: center;
+}
+/* <!-- foooteres of poltury farms --> */
+#footer{
+    background: #fff7f1;
+    margin: 5rem 0rem;
+    padding: 5rem 0rem;
+}
+.qulity-footer{
+    margin: -12px 0px;
+}
+.footer-qulity-contant{
+    margin-top: 2.5rem;
+}
+.qulity-contant p{
+    text-align: start;
+}
+.footer-text{
+    color: #181818;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 2.2rem;
+}
+.egg-image{
+    padding-left: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.egg-image img:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.egg-image img{
+    width: 80px;
+    height: 75px;
+    
+}
+.lite-borwn{
+    margin: 0%;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    color: #181818;
+    font-weight: 700;
+}
+.lite-borwn:hover{
+color: #fe964d;
+cursor: pointer;
+}
+.feed-row img{
+width: 80px;
+height: 80px;
+border-radius: 6px;
+}
+.feed-row img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.feed-row{
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.keep-range i{
+    color: #fe964d;
+}

@@ -1,0 +1,49 @@
+@media (max-width: 576px) { 
+    .discover-now {
+        height: 86vh;
+    }
+    .fresh-killed {
+        font-weight: 600;
+        font-size: 37px;
+    }
+   
+    .items-card{
+        width: 100% !important;
+        margin: 1rem 0px;
+    }
+    .inner-icons {
+        padding: 0px 115px !important;
+    }
+    .poultry-fram-chicken img {
+        width: 370px;
+        height: 370px;
+    }
+    .Alternative-cards{
+        margin-bottom: 2rem;
+    }
+    .card {
+margin-bottom: 2rem;
+ }
+ .image-wrapper{
+    margin-bottom: 1rem;
+ }
+ .card-group{
+    margin-bottom: 2rem;
+ }
+ .product-range{
+    margin-bottom: 2rem; 
+ }
+ .feed-row img{
+    width: 31%;
+    height: 62%;
+    display:block;
+ }
+.icon-first{
+    visibility: hidden;
+}
+.icon-secnd{
+    visibility: hidden;
+}
+}
+
+
